@@ -1,1 +1,1 @@
-##Repository for the StreetSmarts project
+Repository for the StreetSmarts project
