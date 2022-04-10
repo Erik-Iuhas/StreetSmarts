@@ -235,9 +235,9 @@ async function parse(){
                 id: key,
                 sidewalkStatus: json[key][key1],
             };
-            //parse_sidewalk_id(key,json[key][key1])
+            parse_sidewalk_id(key,json[key][key1])
 
-            await API.graphql(graphqlOperation(createSIDEWALKTABLE, { input: sidewalk }));
+            //await API.graphql(graphqlOperation(createSIDEWALKTABLE, { input: sidewalk }));
 
             //console.log(json[key][key1]);
         }
