@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "serviceConfiguration": {
+    "apiName": "lastamplifyjsapp",
+    "serviceName": "AppSync",
+    "gqlSchemaPath": "/Users/nikolaspaterson/Desktop/last/last-amplify-js-app/amplify/backend/api/lastamplifyjsapp/schema.graphql",
+    "defaultAuthType": {
+      "mode": "API_KEY",
+      "expirationTime": 365,
+      "apiKeyExpirationDate": "2023-04-09T18:56:34.423Z",
+      "keyDescription": "GraphQL API key for last-amplify-js-app... i hope"
+    }
+  }
+}
