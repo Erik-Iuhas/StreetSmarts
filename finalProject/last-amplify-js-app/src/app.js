@@ -227,7 +227,7 @@ function savePts(content, fileName, contentType){
 }
 
 async function parse(){
-    var json = require('./copy.json');
+    //var json = require('./copy.json');
     for(var key in json) {
         //console.log(key);
         for (var key1 in json[key]) {
