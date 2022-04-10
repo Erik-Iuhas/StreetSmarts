@@ -406,34 +406,6 @@ async function getSidewalkFancy(s,round) {
     return [contains,contains_round];
 }
 
-//const MutationButton = document.getElementById("MutationEventButton");
-//const MutationResult = document.getElementById("MutationResult");
-//const QueryResult = document.getElementById("QueryResult");
-
-/*
-MutationButton.addEventListener("click", (evt) => {
-    //parse();
-    //getLinkID();
-    //getSidewalks();
-    //drawObstructionMarkers();
-    //getObstructions();
-    //console.log(readSidewalk("P1:45.290096,-75.716285_P2:45.290026999999995,-75.715812"));
-
-    //var temp = getSidewalkFancy();
-    //console.log(temp);
-
-    //createNewObstruction(obstruction1);
-    //createNewObstruction(obstruction2);
-
-     createNewObstruction().then((evt) => {
-        MutationResult.innerHTML += `<p>${evt.data.createOBSTRUCTIONTABLE.type} - ${evt.data.createOBSTRUCTIONTABLE.lat}</p>`;
-    });
-     createNewSidewalk().then((evt) => {
-        MutationResult.innerHTML += `<p>${evt.data.createSIDEWALKTABLE.id} - ${evt.data.createSIDEWALKTABLE.sidewalkStatus}</p>`;
-    });
-});
-*/
-
 async function readSidewalk(input,round_pts, pt1, pt2){
     var a;
     const printA = async () => {
@@ -520,9 +492,6 @@ function draw_all_sidewalks(pt1,pt2,a){
     }
 }
 
-
-//getObstructions();
-//getSidewalks();
 
 //========================================================
 
