@@ -25,7 +25,7 @@ hideTextBox.style.display = "none";
 obstructionsType.addEventListener("change", obstruction);
 
 placeSearch({
-    key: '0XIrfA8qHXnvu0fdwvrvOKFU1BjmKhva',
+    key: '==INSERT MAPQUEST API KEY==',
     container: document.querySelector('#search-start'),
     useDeviceLocation: true,
     collection: [
@@ -37,7 +37,7 @@ placeSearch({
 });
 
 placeSearch({
-    key: '0XIrfA8qHXnvu0fdwvrvOKFU1BjmKhva',
+    key: '==INSERT MAPQUEST API KEY==',
     container: document.querySelector('#search-end'),
     useDeviceLocation: true,
     collection: [
@@ -49,10 +49,7 @@ placeSearch({
 });
 
 //key
-var t1 = "MFhJcmZBOHFIWG52dTBmZHd";
-var t2 = "2cnZPS0ZVMUJqbUtodmE=";
-var t3 = atob(t1+t2);
-L.mapquest.key = t3;
+L.mapquest.key = '==INSERT MAPQUEST API KEY==';
 
 //create map
 var map = L.mapquest.map('map', {
