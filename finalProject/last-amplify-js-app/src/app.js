@@ -150,8 +150,8 @@ document.querySelector('#submit').onclick = function (){
     //var temp = document.querySelector('#search-end').value;
     //console.log(temp);
     //create direction object
-    parse();
-    /**
+    //parse();
+
     dir = L.mapquest.directions();
 
     //dont show traffic in directions
@@ -162,9 +162,9 @@ document.querySelector('#submit').onclick = function (){
         }
     });
 
-
+    
     getPath(dir, map);
-     */
+    
 }
 
 var links = [];
@@ -227,7 +227,7 @@ function savePts(content, fileName, contentType){
 }
 
 async function parse(){
-    //var json = require('./copy.json');
+    var json = require('./copy.json');
     for(var key in json) {
         //console.log(key);
         for (var key1 in json[key]) {
@@ -237,7 +237,7 @@ async function parse(){
             };
             parse_sidewalk_id(key,json[key][key1])
 
-            //await API.graphql(graphqlOperation(createSIDEWALKTABLE, { input: sidewalk }));
+            await API.graphql(graphqlOperation(createSIDEWALKTABLE, { input: sidewalk }));
 
             //console.log(json[key][key1]);
         }
